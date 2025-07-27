@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./Css/all.min.css">
+    <link rel="stylesheet" href="./Css/bootstrap.min.css">
+    <link rel="stylesheet" href="./Css/style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top p-3">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="home.html">
+                <i class="fas fa-building me-2"></i>منصة عقارية
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="home.html">الرئيسية</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services .html">العقارات</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="favorites.html">المفضلة</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">تواصل معنا</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="cart.html">
+                            <i class="fas fa-shopping-cart"></i> سلة الحجز <span class="badge bg-danger rounded-pill"
+                                id="cartCount">0</span>
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-user-circle"></i> حسابي
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="login.html">تسجيل الدخول</a></li>
+                            <li><a class="dropdown-item" href="register.html">إنشاء حساب</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li style="display: none;"><a class="dropdown-item" href="#" id="logoutButton">تسجيل
+                                    الخروج</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main class="d-flex align-items-center justify-content-center" style="min-height: 100vh; padding-top: 56px;">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-7 col-lg-6">
+                    <div class="card shadow-lg p-4 p-md-5 rounded-4 border-0 animate__animated animate__fadeInUp">
+                        <div class="card-body">
+                            <h2 class="card-title text-center text-primary fw-bold mb-4">إنشاء حساب جديد</h2>
+                            <p class="text-center text-muted mb-4">انضم إلينا اليوم واستكشف أفضل العقارات.</p>
+
+                            <form id="registerForm">
+                                <div class="mb-3">
+                                    <label for="username" class="form-label">الاسم بالكامل</label>
+                                    <input type="text" class="form-control" id="username"
+                                        placeholder="ادخل اسمك بالكامل" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">البريد الإلكتروني</label>
+                                    <input type="email" class="form-control" id="email"
+                                        placeholder="ادخل بريدك الإلكتروني" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="password" class="form-label">كلمة المرور</label>
+                                    <input type="password" class="form-control" id="password"
+                                        placeholder="ادخل كلمة المرور (6 أحرف على الأقل)" required minlength="6">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="confirmPassword" class="form-label">تأكيد كلمة المرور</label>
+                                    <input type="password" class="form-control" id="confirmPassword"
+                                        placeholder="أعد إدخال كلمة المرور" required>
+                                </div>
+
+                                <div id="registerErrorMessage" class="alert alert-danger d-none mt-3" role="alert">
+                                </div>
+                                <div id="registerSuccessMessage" class="alert alert-success d-none mt-3" role="alert">
+                                    تم إنشاء حسابك بنجاح! سيتم تحويلك لصفحة تسجيل الدخول.
+                                </div>
+
+                                <button type="submit" class="btn btn-primary btn-lg w-100 custom-btn-scale mt-3">تسجيل
+                                    الآن</button>
+                            </form>
+                            <div class="text-center mt-4">
+                                <p>ليس لديك حساب  <a href="login.html"
+                                        class="text-primary fw-bold text-decoration-none">سجل الدخول من هنا</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-dark text-white py-4 mt-auto">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-3 mb-md-0 text-center text-md-start">
+                    <h5 class="fw-bold"><i class="fas fa-building me-2"></i>منصة عقارية</h5>
+                    <p class="small text-muted">مكانك الأمثل للعثور على عقارك القادم.</p>
+                </div>
+                <div class="col-md-4 mb-3 mb-md-0 text-center">
+                    <h5 class="fw-bold">روابط سريعة</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white-50 text-decoration-none">سياسة الخصوصية</a></li>
+                        <li><a href="#" class="text-white-50 text-decoration-none">شروط الاستخدام</a></li>
+                        <li><a href="#" class="text-white-50 text-decoration-none">الأسئلة الشائعة</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 text-center text-md-end">
+                    <h5 class="fw-bold">تابعنا</h5>
+                    <a href="#" class="text-white-50 mx-2"><i class="fab fa-facebook-f fa-lg"></i></a>
+                    <a href="#" class="text-white-50 mx-2"><i class="fab fa-twitter fa-lg"></i></a>
+                    <a href="#" class="text-white-50 mx-2"><i class="fab fa-instagram fa-lg"></i></a>
+                    <a href="#" class="text-white-50 mx-2"><i class="fab fa-linkedin-in fa-lg"></i></a>
+                </div>
+            </div>
+            <hr class="mt-3 border-secondary">
+            <div class="text-center small text-white-50">
+                © <span id="currentYear"></span> منصة عقارية. جميع الحقوق محفوظة.
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="./j.s/bootstrap.bundle.min.js"></script>
+    <script src="./javaScript/java.js"></script>
+</body>
+
+</html>

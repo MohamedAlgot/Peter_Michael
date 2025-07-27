@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./Css/all.min.css">
+    <link rel="stylesheet" href="./Css/bootstrap.min.css">
+    <link rel="stylesheet" href="./Css/style.css">
+    <link rel="stylesheet" href="./Css/styleContact.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top p-3">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="home.html">
+                <i class="fas fa-building me-2"></i>منصة عقارية
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="home.html">الرئيسية</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services .html">العقارات</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="favorites.html">المفضلة</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">تواصل معنا</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="cart.html">
+                            <i class="fas fa-shopping-cart"></i> سلة الحجز <span class="badge bg-danger rounded-pill"
+                                id="cartCount">0</span>
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-user-circle"></i> حسابي
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="login.html">تسجيل الدخول</a></li>
+                            <li><a class="dropdown-item" href="register.html">إنشاء حساب</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li style="display: none;"><a class="dropdown-item" href="#" id="logoutButton">تسجيل
+                                    الخروج</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <main>
+        <section
+            class="contact-hero-section text-white text-center d-flex align-items-center justify-content-center py-5"
+            style="background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://via.placeholder.com/1920x400?text=Contact+Us+Header+Image') no-repeat center center; background-size: cover; min-height: 250px; margin-top: 56px;">
+            <div class="container">
+                <h1 class="display-4 fw-bold mb-3">تواصل معنا</h1>
+                <p class="lead">يسعدنا تلقي استفساراتكم واقتراحاتكم في أي وقت لتقديم أفضل خدمة عقارية.</p>
+            </div>
+        </section>
+
+        <section class="py-5 bg-light">
+            <div class="container">
+                <div class="row g-4 justify-content-center">
+                    <div class="col-lg-5">
+                        <div class="card p-4 shadow-lg contact-info-card h-100">
+                            <h3 class="mb-4 text-primary fw-bold">معلومات التواصل</h3>
+                            <ul class="list-unstyled contact-list mb-4">
+                                <li class="d-flex align-items-center mb-3">
+                                    <i class="fas fa-map-marker-alt fa-lg text-primary ms-3"></i>
+                                    <span>**مدينه سوهاج - غرب سوهاج - شارع 15**</span>
+                                </li>
+                                <li class="d-flex align-items-center mb-3">
+                                    <i class="fas fa-phone-alt fa-lg text-primary ms-3"></i>
+                                    <span>**الهاتف:** 01070725254</span>
+                                </li>
+                                <li class="d-flex align-items-center mb-3">
+                                    <i class="fas fa-envelope fa-lg text-primary ms-3"></i>
+                                    <span>**البريد الإلكتروني:** falcon@realestate.com</span>
+                                </li>
+                                <li class="d-flex align-items-center mb-3">
+                                    <i class="fas fa-clock fa-lg text-primary ms-3"></i>
+                                    <span>**ساعات العمل:** الأحد - الخميس: 9:00 صباحاً - 5:00 مساءً</span>
+                                </li>
+                            </ul>
+                            <h4 class="mt-4 mb-3 text-dark fw-bold">تابعنا على وسائل التواصل</h4>
+                            <div class="social-icons ">
+                                <a href="#" class="text-primary fs-3 mx-2"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#" class="text-primary fs-3 mx-2"><i class="fab fa-twitter"></i></a>
+                                <a href="#" class="text-primary fs-3 mx-2"><i class="fab fa-instagram"></i></a>
+                                <a href="#" class="text-primary fs-3 mx-2"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-7">
+                        <div class="card p-4 shadow-lg contact-form-card h-100">
+                            <h3 class="mb-4 text-primary fw-bold">أرسل لنا رسالة</h3>
+                            <form id="contactForm">
+                                <div class="mb-3">
+                                    <label for="name" class="form-label">الاسم الكامل</label>
+                                    <input type="text" class="form-control" id="name" required
+                                        placeholder="أدخل اسمك الكريم">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">البريد الإلكتروني</label>
+                                    <input type="email" class="form-control" id="email" required
+                                        placeholder="example@domain.com">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="subject" class="form-label">الموضوع</label>
+                                    <input type="text" class="form-control" id="subject" required
+                                        placeholder="موضوع رسالتك">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="message" class="form-label">الرسالة</label>
+                                    <textarea class="form-control" id="message" rows="5" required
+                                        placeholder="اكتب رسالتك هنا..."></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary btn-lg w-100 custom-btn-scale">
+                                    <i class="fas fa-paper-plane ms-2"></i>إرسال الرسالة
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-5">
+            <div class="container">
+                <h2 class="text-center mb-5 text-dark fw-bold">موقعنا على الخريطة</h2>
+                <div class="map-responsive shadow-lg rounded-3 overflow-hidden">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d51672.420779597756!2d31.73922522434442!3d26.56053160002298!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x144f59375b0e09f1%3A0xa33bfcf664c5f2fe!2z2LPZiNmH2KfYrNiMINin2YTYrtmI2YTZitiMINmC2LPZhSDYo9mI2YQg2LPZiNmH2KfYrNiMINmF2K3Yp9mB2LjYqSDYs9mI2YfYp9is!5e1!3m2!1sar!2seg!4v1753218863573!5m2!1sar!2seg"
+                        width="1300" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <p class="text-center text-muted mt-3">نحن نرحب بزيارتكم في مواعيد العمل الرسمية.</p>
+            </div>
+        </section>
+
+        <section class="py-5 bg-primary text-white">
+            <div class="container text-center">
+                <h2 class="mb-4 fw-bold">نبذة عن منصتنا العقارية</h2>
+                <p class="lead mb-4">
+                    تعتبر منصة "عقارات" وجهتك الموثوقة لكل ما يتعلق بالسوق العقاري. نقدم حلولاً متكاملة وابتكارية لتسهيل
+                    عمليات البيع، الشراء، والتأجير، بالإضافة إلى إدارة العقارات بكفاءة عالية.
+                </p>
+                <p>
+                    نؤمن بأن عملية البحث عن العقار المثالي أو تسويقه يجب أن تكون تجربة سلسة وممتعة. لذلك، قمنا ببناء
+                    منصة سهلة الاستخدام، مدعومة بأحدث التقنيات وفريق من الخبراء المستعدين لتقديم الدعم والمشورة في كل
+                    خطوة.
+                </p>
+                <p class="mb-0">
+                    سواء كنت تبحث عن منزل الأحلام، فرصة استثمارية، أو شريك موثوق لإدارة ممتلكاتك، فإن "عقارات" هو خيارك
+                    الأمثل.
+                </p>
+            </div>
+        </section>
+
+        <section class="py-5">
+            <div class="container">
+                <h2 class="text-center mb-5 text-dark fw-bold">قيمنا ورسالتنا</h2>
+                <div class="row row-cols-1 row-cols-md-3 g-4 text-center">
+                    <div class="col">
+                        <div class="card h-100 p-4 shadow-sm value-card">
+                            <i class="fas fa-handshake fa-4x text-info mb-3"></i>
+                            <h5 class="fw-bold mb-2">النزاهة والشفافية</h5>
+                            <p class="text-muted">نلتزم بالصدق والوضوح في جميع تعاملاتنا، لضمان بناء علاقات طويلة الأمد
+                                مبنية على الثقة المتبادلة.</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 p-4 shadow-sm value-card">
+                            <i class="fas fa-lightbulb fa-4x text-warning mb-3"></i>
+                            <h5 class="fw-bold mb-2">الابتكار والتميز</h5>
+                            <p class="text-muted">نسعى دائماً لتبني أحدث التقنيات وتقديم حلول إبداعية لتجاوز توقعات
+                                عملائنا في السوق العقاري.</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 p-4 shadow-sm value-card">
+                            <i class="fas fa-users fa-4x text-success mb-3"></i>
+                            <h5 class="fw-bold mb-2">التركيز على العميل</h5>
+                            <p class="text-muted">احتياجات عملائنا هي أولويتنا القصوى، نعمل بجد لتقديم خدمات مخصصة تلبي
+                                طموحاتهم وتحقق رضاهم الكامل.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-5 bg-light">
+            <div class="container">
+                <h2 class="text-center mb-5 text-dark fw-bold">الأسئلة الشائعة</h2>
+                <div class="accordion accordion-flush" id="faqAccordion">
+                    <div class="accordion-item shadow-sm mb-3 rounded-3">
+                        <h2 class="accordion-header" id="flush-headingOne">
+                            <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                aria-controls="flush-collapseOne">
+                                كيف يمكنني إدراج عقاري للبيع أو الإيجار؟
+                            </button>
+                        </h2>
+                        <div id="flush-collapseOne" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingOne" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body text-muted">
+                                يمكنك إدراج عقارك بسهولة عن طريق التسجيل في المنصة والتوجه إلى قسم "إضافة عقار"، ثم اتبع
+                                الخطوات لإضافة التفاصيل والصور. سيقوم فريقنا بمراجعة الإدراج قبل نشره.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item shadow-sm mb-3 rounded-3">
+                        <h2 class="accordion-header" id="flush-headingTwo">
+                            <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                aria-controls="flush-collapseTwo">
+                                هل تقدمون خدمات تقييم للعقارات؟
+                            </button>
+                        </h2>
+                        <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingTwo" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body text-muted">
+                                نعم، نقدم خدمات تقييم عقاري احترافية ودقيقة بناءً على أحدث بيانات السوق وتحليل الخبراء
+                                لمساعدتك في اتخاذ قرارات مستنيرة. يرجى التواصل معنا للحصول على مزيد من التفاصيل.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item shadow-sm mb-3 rounded-3">
+                        <h2 class="accordion-header" id="flush-headingThree">
+                            <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                aria-controls="flush-collapseThree">
+                                ما هي مدة عملية البيع أو الشراء للعقار؟
+                            </button>
+                        </h2>
+                        <div id="flush-collapseThree" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingThree" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body text-muted">
+                                تختلف المدة باختلاف عدة عوامل مثل نوع العقار، موقعه، وظروف السوق الحالية. فريقنا يعمل
+                                بجد لتبسيط الإجراءات وتسريع العملية قدر الإمكان مع ضمان سلامة جميع المعاملات.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-3 mb-md-0 text-center text-md-start">
+                    <h5 class="fw-bold"><i class="fas fa-building ms-2"></i>عقارات</h5>
+                    <p class="small text-muted">مكانك المثالي للعثور على عقارك القادم.</p>
+                </div>
+                <div class="col-md-4 mb-3 mb-md-0 text-center">
+                    <h5 class="fw-bold">روابط سريعة</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white-50 text-decoration-none">سياسة الخصوصية</a></li>
+                        <li><a href="#" class="text-white-50 text-decoration-none">شروط الاستخدام</a></li>
+                        <li><a href="#" class="text-white-50 text-decoration-none">الأسئلة الشائعة</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 text-center text-md-end">
+                    <h5 class="fw-bold">تابعنا</h5>
+                    <a href="#" class="text-white-50 mx-2"><i class="fab fa-facebook-f fa-lg"></i></a>
+                    <a href="#" class="text-white-50 mx-2"><i class="fab fa-twitter fa-lg"></i></a>
+                    <a href="#" class="text-white-50 mx-2"><i class="fab fa-instagram fa-lg"></i></a>
+                    <a href="#" class="text-white-50 mx-2"><i class="fab fa-linkedin-in fa-lg"></i></a>
+                </div>
+            </div>
+            <hr class="mt-3 border-secondary">
+            <div class="text-center small text-white-50">
+                &copy; <span id="currentYear"></span> عقارات. جميع الحقوق محفوظة.
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="./j.s/bootstrap.bundle.min.js"></script>
+    <script src="./javaScript/java.js"></script>
+</body>
+
+</html>
